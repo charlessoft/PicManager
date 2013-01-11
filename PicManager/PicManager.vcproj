@@ -48,11 +48,13 @@
 			<Tool
 				Name="VCCLCompilerTool"
 				Optimization="0"
+				AdditionalIncludeDirectories="../KUI;../KUI/wtl"
 				PreprocessorDefinitions="WIN32;_WINDOWS;STRICT;_DEBUG"
 				MinimalRebuild="true"
 				BasicRuntimeChecks="3"
 				RuntimeLibrary="1"
 				UsePrecompiledHeader="2"
+				PrecompiledHeaderThrough="../include/StdAfx.h"
 				WarningLevel="3"
 				DebugInformationFormat="4"
 			/>
@@ -63,13 +65,14 @@
 				Name="VCResourceCompilerTool"
 				PreprocessorDefinitions="_DEBUG"
 				Culture="1033"
-				AdditionalIncludeDirectories="$(IntDir)"
+				AdditionalIncludeDirectories="&quot;$(IntDir)&quot;;&quot;../KUI;../KUI/wtl&quot;"
 			/>
 			<Tool
 				Name="VCPreLinkEventTool"
 			/>
 			<Tool
 				Name="VCLinkerTool"
+				OutputFile="../$(OutDir)\$(ProjectName).exe"
 				LinkIncremental="2"
 				GenerateDebugInformation="true"
 				SubSystem="2"
@@ -134,10 +137,12 @@
 			/>
 			<Tool
 				Name="VCCLCompilerTool"
+				AdditionalIncludeDirectories="../KUI;../KUI/wtl"
 				PreprocessorDefinitions="WIN32;_WINDOWS;STRICT;NDEBUG"
 				ExceptionHandling="0"
 				RuntimeLibrary="0"
 				UsePrecompiledHeader="2"
+				PrecompiledHeaderThrough="../include/StdAfx.h"
 				WarningLevel="3"
 				DebugInformationFormat="0"
 			/>
@@ -148,13 +153,14 @@
 				Name="VCResourceCompilerTool"
 				PreprocessorDefinitions="NDEBUG"
 				Culture="1033"
-				AdditionalIncludeDirectories="$(IntDir)"
+				AdditionalIncludeDirectories="&quot;$(IntDir)&quot;;&quot;../KUI;../KUI/wtl&quot;"
 			/>
 			<Tool
 				Name="VCPreLinkEventTool"
 			/>
 			<Tool
 				Name="VCLinkerTool"
+				OutputFile="../$(OutDir)\$(ProjectName).exe"
 				LinkIncremental="1"
 				SubSystem="2"
 				TargetMachine="1"
@@ -193,15 +199,15 @@
 			Filter="cpp;c;cxx;def;odl;idl;hpj;bat;asm"
 			>
 			<File
-				RelativePath=".\MainDlg.cpp"
+				RelativePath=".\src\MainDlg.cpp"
 				>
 			</File>
 			<File
-				RelativePath=".\PicManager.cpp"
+				RelativePath=".\src\PicManager.cpp"
 				>
 			</File>
 			<File
-				RelativePath=".\stdafx.cpp"
+				RelativePath=".\src\stdafx.cpp"
 				>
 				<FileConfiguration
 					Name="Debug|Win32"
@@ -209,6 +215,7 @@
 					<Tool
 						Name="VCCLCompilerTool"
 						UsePrecompiledHeader="1"
+						PrecompiledHeaderThrough=""
 					/>
 				</FileConfiguration>
 				<FileConfiguration
@@ -217,6 +224,7 @@
 					<Tool
 						Name="VCCLCompilerTool"
 						UsePrecompiledHeader="1"
+						PrecompiledHeaderThrough=""
 					/>
 				</FileConfiguration>
 			</File>
@@ -226,15 +234,19 @@
 			Filter="h;hpp;hxx;hm;inl;inc"
 			>
 			<File
-				RelativePath=".\MainDlg.h"
+				RelativePath=".\include\MainDlg.h"
 				>
 			</File>
 			<File
-				RelativePath=".\resource.h"
+				RelativePath=".\include\PicManager.h"
 				>
 			</File>
 			<File
-				RelativePath=".\stdafx.h"
+				RelativePath=".\include\resource.h"
+				>
+			</File>
+			<File
+				RelativePath=".\include\stdafx.h"
 				>
 			</File>
 		</Filter>
@@ -243,11 +255,19 @@
 			Filter="rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;jpg;jpeg;jpe;manifest"
 			>
 			<File
-				RelativePath=".\res\PicManager.ico"
+				RelativePath="..\KUI\bkres\bkres.rc"
 				>
 			</File>
 			<File
-				RelativePath=".\PicManager.rc"
+				RelativePath=".\src\bkwinres.h"
+				>
+			</File>
+			<File
+				RelativePath=".\bkwinres.rc2"
+				>
+			</File>
+			<File
+				RelativePath=".\src\PicManager.rc"
 				>
 			</File>
 		</Filter>
