@@ -48,7 +48,7 @@
 			<Tool
 				Name="VCCLCompilerTool"
 				Optimization="0"
-				AdditionalIncludeDirectories="../KUI;../KUI/bkwin;../KUI/wtl"
+				AdditionalIncludeDirectories="../KUI/wtl;../KUI"
 				PreprocessorDefinitions="WIN32;_WINDOWS;STRICT;_DEBUG"
 				MinimalRebuild="true"
 				BasicRuntimeChecks="3"
@@ -64,7 +64,7 @@
 				Name="VCResourceCompilerTool"
 				PreprocessorDefinitions="_DEBUG"
 				Culture="1033"
-				AdditionalIncludeDirectories="&quot;$(IntDir)&quot;;../KUI;../KUI/bkwin;../KUI/wtl"
+				AdditionalIncludeDirectories="&quot;$(IntDir)&quot;;../KUI/wtl;../KUI"
 			/>
 			<Tool
 				Name="VCPreLinkEventTool"
@@ -264,6 +264,170 @@
 			</File>
 			<File
 				RelativePath=".\PicManager.rc"
+				>
+			</File>
+		</Filter>
+		<Filter
+			Name="import"
+			>
+			<Filter
+				Name="bkwin"
+				>
+				<File
+					RelativePath="..\KUI\bkwin\bkatldefine.h"
+					>
+				</File>
+				<File
+					RelativePath="..\KUI\bkwin\bkcolor.h"
+					>
+				</File>
+				<File
+					RelativePath="..\KUI\bkwin\bkdlgview.h"
+					>
+				</File>
+				<File
+					RelativePath="..\KUI\bkwin\bkimage.h"
+					>
+				</File>
+				<File
+					RelativePath="..\KUI\bkwin\bklistbox.h"
+					>
+				</File>
+				<File
+					RelativePath="..\KUI\bkwin\bklistview.h"
+					>
+				</File>
+				<File
+					RelativePath="..\KUI\bkwin\bkobject.h"
+					>
+				</File>
+				<File
+					RelativePath="..\KUI\bkwin\bkskin.h"
+					>
+				</File>
+				<File
+					RelativePath="..\KUI\bkwin\bktheme.h"
+					>
+				</File>
+				<File
+					RelativePath="..\KUI\bkwin\bkwnd.h"
+					>
+				</File>
+				<File
+					RelativePath="..\KUI\bkwin\bkwndcmnctrl.h"
+					>
+				</File>
+				<File
+					RelativePath="..\KUI\bkwin\bkwnddlg.h"
+					>
+				</File>
+				<File
+					RelativePath="..\KUI\bkwin\bkwnddlgfile.h"
+					>
+				</File>
+				<File
+					RelativePath="..\KUI\bkwin\bkwndnotify.h"
+					>
+				</File>
+				<File
+					RelativePath="..\KUI\bkwin\bkwndpanel.h"
+					>
+				</File>
+				<File
+					RelativePath="..\KUI\bkwin\bkwndrichtxt.h"
+					>
+				</File>
+				<File
+					RelativePath="..\KUI\bkwin\bkwndstyle.h"
+					>
+				</File>
+				<File
+					RelativePath="..\KUI\bkwin\bkwndtabctrl.h"
+					>
+				</File>
+				<File
+					RelativePath="..\KUI\bkwin\listboxbase.h"
+					>
+				</File>
+			</Filter>
+			<Filter
+				Name="tinyxml"
+				>
+				<File
+					RelativePath="..\KUI\tinyxml\tinystr.cpp"
+					>
+					<FileConfiguration
+						Name="Debug|Win32"
+						>
+						<Tool
+							Name="VCCLCompilerTool"
+							UsePrecompiledHeader="0"
+						/>
+					</FileConfiguration>
+				</File>
+				<File
+					RelativePath="..\KUI\tinyxml\tinystr.h"
+					>
+				</File>
+				<File
+					RelativePath="..\KUI\tinyxml\tinyxml.cpp"
+					>
+					<FileConfiguration
+						Name="Debug|Win32"
+						>
+						<Tool
+							Name="VCCLCompilerTool"
+							UsePrecompiledHeader="0"
+						/>
+					</FileConfiguration>
+				</File>
+				<File
+					RelativePath="..\KUI\tinyxml\tinyxml.h"
+					>
+				</File>
+				<File
+					RelativePath="..\KUI\tinyxml\tinyxmlerror.cpp"
+					>
+					<FileConfiguration
+						Name="Debug|Win32"
+						>
+						<Tool
+							Name="VCCLCompilerTool"
+							UsePrecompiledHeader="0"
+						/>
+					</FileConfiguration>
+				</File>
+				<File
+					RelativePath="..\KUI\tinyxml\tinyxmlparser.cpp"
+					>
+					<FileConfiguration
+						Name="Debug|Win32"
+						>
+						<Tool
+							Name="VCCLCompilerTool"
+							UsePrecompiledHeader="0"
+						/>
+					</FileConfiguration>
+				</File>
+			</Filter>
+		</Filter>
+		<Filter
+			Name="xml"
+			>
+			<File
+				RelativePath=".\res\def_skin.xml"
+				>
+			</File>
+			<File
+				RelativePath=".\res\def_string.xml"
+				>
+			</File>
+			<File
+				RelativePath=".\res\def_style.xml"
+				>
+			</File>
+			<File
+				RelativePath=".\res\dlg_main.xml"
 				>
 			</File>
 		</Filter>

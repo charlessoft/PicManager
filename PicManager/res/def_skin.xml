@@ -5,15 +5,16 @@
   <!--<imgframe name="dlg_pdf_bg2" src="503" top="1" left="1" />-->
 <imgframe name="panel" src="107" top="1" left="1" crbg="FFFFFF"/>
   <imgframe name="panelsysopt" src="107" top="1" left="1" crbg="FBFCFD"/>
-  <imgframe name="panelgray" src="106" top="1" left="1" crbg="FBFCFD"/>
-    <imgframe name="tabpage" src="107" top="1" left="1" crbg="FBFCFD" part="center"/>
-   <imghorzex name="tab" src="10006" mode="mask" subwidth="7" left="3"/>
+  <!--<imgframe name="panelgray" src="106" top="1" left="1" crbg="FBFCFD"/>-->
+  <!--<<imgframe name="tabpage" src="107" top="1" left="1" crbg="FBFCFD" part="center"/>-->
+   <!--<<imghorzex name="tab" src="10006" mode="mask" subwidth="7" left="3"/>-->
   <!--<png name="tabmain" src="97" mode="mask" subwidth="35" />-->
-  <imglst name="tabmain" src="5" mode="mask" subwidth="71"/>
-  <png name="logomodule" src="3" subwidth="48" />
+  <!--<<imglst name="tabmain" src="5" mode="mask" subwidth="71"/>-->
+  <!--<<png name="logomodule" src="3" subwidth="48" />-->
 
    <button name=normalbtn border="7D9EBC" bg="FF6A6A" bgup="FEFEFE" bgdown="C6E2FD" bguphover="FEFEFE" bgdownhover="DBEDFE" bguppush="C6E2FD" bgdownpush="FEFEFE"/>
   <!--<skins-png>-->
+  
   <png name="little_logo"  src="201"/>
   <png name="big_logo"     src="202"/>
   <!--<png name="status_ok"    src="303"/>
@@ -24,9 +25,9 @@
   <png name="dlg_btn_max" src="101" subwidth="31"/>  
   <png name="dlg_btn_min" src="102" subwidth="31"/>
   <png name="dlg_btn_normal" src="103" subwidth="31"/>
-  <png name="dlg_pdf_bg2" src="503" />
+  <!--<png name="dlg_pdf_bg2" src="503" />-->
 
-  <png name="dlg_child_bg2" src="504" />
+  <!--<png name="dlg_child_bg2" src="504" />-->
   <!--<png name="dlg_btn_menu" src="110" subwidth="40"/>-->
   <!--</skins-png>-->
 

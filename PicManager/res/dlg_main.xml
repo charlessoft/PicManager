@@ -1,8 +1,8 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<layer title="金山界面库" width="580" height="420" appwin="1" resize="1">
+<layer title="图片查看器" width="580" height="420" appwin="1" resize="1">
   <header class="dlg_header" width="full" height="30">
     <img pos="8,8" skin="little_logo"/>
-    <text pos="28,10" class="head_text_title">金山界面库 测试[BY chenqian]</text>
+    <text pos="28,10" class="head_text_title">图片查看器</text>
     <link class="linktext2" pos="-180,11" href="http://www.baidu.com" crtext="FFFFFF">检查更新</link>
     <imgbtn id="102" pos="-105,1" tip="最小化" skin="dlg_btn_min"/>
     <imgbtn id="101" pos="-74,1" tip="最大化" skin="dlg_btn_max"/>

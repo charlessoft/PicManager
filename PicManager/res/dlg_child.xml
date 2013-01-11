@@ -1,0 +1,50 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<layer title="子窗体测试" width="650" height="420"  resize="1">
+  <header class="dlg_header" width="full" height="30">
+    <img pos="8,8" skin="little_logo"/>
+    <text pos="28,10" class="head_text_title">子窗体 测试[BY chenqian]</text>
+    <link class="linktext2" pos="-180,11" href="http://www.baidu.com" crtext="FFFFFF">检查更新</link>
+    <!--<imgbtn id="102" pos="-105,1" tip="最小化" skin="dlg_btn_min"/>
+    <imgbtn id="101" pos="-74,1" tip="最大化" skin="dlg_btn_max"/>-->
+    <imgbtn id="100" pos="-43,1" tip="关闭" skin="dlg_btn_close"/>
+  </header>
+  
+  <footer class="dlg_footer" width="full" height="30">
+    <dlg pos="0,0,-0,-4" crbg="DCE3EB">
+    </dlg>
+  </footer>
+  
+  <body class="dlg_body" width="full" height="full">
+    <dlg pos="0,0,-0,-0" crbg="FBFCBD">
+	<!--	 <tabctrl id="10641" cursel="0" tabwidth="65" tabheight="70" tabskin="tabmain" iconskin="logomodule" tabspacing="4" tabpos="10" pos="0,10,-1,-0" frameskin="panelgray" framepos="-1" crtext="000000">
+       <tab title="首页" width="full" height="full" class="tabpageblue"></tab>
+       <tab title="测试" width="full" height="full" class="tabpageblue"></tab>
+    </tabctrl>-->
+
+      <tabctrl id="136" tabwidth="71" tabheight="71" tabskin="tabmain" iconskin="logomodule" splitterskin1="tabmainsplitter" tabspacing="5" tabpos="1" framepos="7" pos="0,4,-0,-1" icon-x="10" icon-y="1" text-x="0" text-y="25">
+        <tab title="首页" width="full" height="full" crtext="000000" class="tabpageblue">
+          <dlg pos="1,1,-1,-1" class="panel">
+            <text pos="10,100">首页</text>
+          </dlg>
+        </tab>
+        <tab title="查杀木马" width="full" height="full" crtext="000000" class="tabpageblue">
+          <text pos="10,200"> 来一起查杀木马吧~~</text>
+        </tab>
+        <tab title="免费杀毒" width="full" height="full" class1="tabpage" crtext="000000" class="tabpageblue">
+          
+        </tab>
+        <tab title="修复漏洞" width="full" height="full" class1="tabpage" crtext="000000" class="tabpageblue">
+        </tab>
+        <tab title="系统优化" width="full" height="full" crtext="000000" class="tabpageblue">
+        </tab>
+        <tab title="垃圾清理" width="full" height="full" crtext="000000" class="tabpageblue">
+        </tab>
+        <tab title="监控防御" width="full" height="full" crtext="000000" class="tabpageblue">
+        </tab>
+        <tab title="软件管理" width="full" height="full" crtext="000000" class="tabpageblue">
+        </tab>
+      </tabctrl>
+    </dlg>
+  </body>
+
+</layer>
