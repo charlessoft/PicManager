@@ -1,0 +1,48 @@
+//////////////////////////////////////////////////////////////////////////////////////
+// XML
+
+DEFINE_XML(IDR_BK_SKIN_DEF,			100, "res\\def_skin.xml")
+DEFINE_XML(IDR_BK_STYLE_DEF,		101, "res\\def_style.xml")
+DEFINE_XML(IDR_BK_STRING_DEF,		102, "res\\def_string.xml")
+DEFINE_XML(IDR_BK_MAIN_DIALOG,		103, "res\\dlg_main.xml")
+//DEFINE_XML(IDR_BK_CHILD_DIALOG,		104,  "res\\dlg_child.xml")
+
+//////////////////////////////////////////////////////////////////////////
+// PNG
+
+// DEFINE_PNG(IDP_LITTLE_LOGO,					201,   "res\\little_logo.png")
+// DEFINE_PNG(IDP_BIG_LOGO,					202,   "res\\big_logo.png")
+// 
+// DEFINE_PNG(IDC_BTN_CLOSE,					100,	"res\\dlg_btn_close.png")
+// DEFINE_PNG(IDC_BTN_MAX,						101,	"res\\dlg_btn_max.png")
+// DEFINE_PNG(IDC_BTN_MIN,						102,	"res\\dlg_btn_min.png")
+// DEFINE_PNG(IDC_BTN_NORMAL,					103,	"res\\dlg_btn_normal.png")
+// DEFINE_PNG(IDC_BTN_MENU,					114,	"res\\dlg_btn_menu.png")
+// 
+// DEFINE_PNG(IDB_DLG_PDF_BG2,					503,		"res\\dlg_pdf_bg2.png")
+// DEFINE_PNG(DLG_CHILD_BG2,					504,		"res\\child_bg.png")
+//////////////////////////////////////////////////////////////////////////
+// BITMAP
+
+// DEFINE_BMP(IDB_DLG_HEADER,					501,		"res\\dlg_header.bmp")
+// DEFINE_BMP(IDB_DLG_BODY,					502,		"res\\dlg_body.bmp")
+// 
+// DEFINE_BMP(IDB_BITMAP_LISTCTRL_CHECK,		111,		"res\\listctrl_check.bmp")
+// DEFINE_BMP(IDB_BITMAP_LISTCTRL_HEADER,		108,		"res\\listctrl_header.bmp")
+// DEFINE_BMP(IDB_BITMAP_MINUS_PLUS,			109,		"res\\minus_plus.bmp")
+// DEFINE_BMP(IDB_BITMAP_LISTCTRL_RADIO,		110,		"res\\listctrl_radio.bmp")
+// DEFINE_BMP(IDB_BITMAP_LISTCTRL_COMBO,		112,		"res\\listctrl_combo.bmp")
+//  
+// 通用的元素		100-10000
+// DEFINE_BMP(IDB_FRAME_PANEL_GRAY,			106,					"res\\frame_panel_gray.bmp")
+// DEFINE_BMP(IDB_FRAME_PANEL,					107,					"res\\frame_panel.bmp")
+// 
+// DEFINE_BMP(IDB_TAB_NORMAL,                  10006,   				"res\\tab_normal.bmp")
+// DEFINE_ICO(IDI_BIG,							99,						"res\\mycode.ico")
+// DEFINE_ICO(IDI_SMALL,							98,						"res\\mycode.ico")
+// DEFINE_PNG(IDC_DLG_CHILD_MAIN,				97,						"res\\tabmain.png")
+// DEFINE_PNG(IDC_DLG_MODULE,				96,						"res\\child_bg.png")
+// 
+// DEFINE_PNG(IDP_LOGO_MODULE,                 			3,   					"res\\logo_module.png")
+// DEFINE_BMP(IDB_TAB_MAIN,                    			5,   					"res\\tab_main.bmp")
+

@@ -3,7 +3,7 @@
 	ProjectType="Visual C++"
 	Version="8.00"
 	Name="PicManager"
-	ProjectGUID="{A77F0949-E65D-49CC-8C32-1E1AD32E62D5}"
+	ProjectGUID="{7E465641-3F70-47D2-A60E-BA79B77EDDD2}"
 	>
 	<Platforms>
 		<Platform
@@ -48,6 +48,7 @@
 			<Tool
 				Name="VCCLCompilerTool"
 				Optimization="0"
+				AdditionalIncludeDirectories="../KUI;../KUI/bkwin;../KUI/wtl"
 				PreprocessorDefinitions="WIN32;_WINDOWS;STRICT;_DEBUG"
 				MinimalRebuild="true"
 				BasicRuntimeChecks="3"
@@ -63,7 +64,7 @@
 				Name="VCResourceCompilerTool"
 				PreprocessorDefinitions="_DEBUG"
 				Culture="1033"
-				AdditionalIncludeDirectories="$(IntDir)"
+				AdditionalIncludeDirectories="&quot;$(IntDir)&quot;;../KUI;../KUI/bkwin;../KUI/wtl"
 			/>
 			<Tool
 				Name="VCPreLinkEventTool"
@@ -134,6 +135,7 @@
 			/>
 			<Tool
 				Name="VCCLCompilerTool"
+				AdditionalIncludeDirectories="../KUI;../KUI/bkwin;../KUI/wtl"
 				PreprocessorDefinitions="WIN32;_WINDOWS;STRICT;NDEBUG"
 				ExceptionHandling="0"
 				RuntimeLibrary="0"
@@ -148,7 +150,7 @@
 				Name="VCResourceCompilerTool"
 				PreprocessorDefinitions="NDEBUG"
 				Culture="1033"
-				AdditionalIncludeDirectories="$(IntDir)"
+				AdditionalIncludeDirectories="$(IntDir);../KUI;../KUI/bkwin;../KUI/wtl"
 			/>
 			<Tool
 				Name="VCPreLinkEventTool"
@@ -242,6 +244,18 @@
 			Name="Resource Files"
 			Filter="rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;jpg;jpeg;jpe;manifest"
 			>
+			<File
+				RelativePath="..\KUI\bkres\bkres.rc"
+				>
+			</File>
+			<File
+				RelativePath=".\bkwinres.h"
+				>
+			</File>
+			<File
+				RelativePath=".\bkwinres.rc2"
+				>
+			</File>
 			<File
 				RelativePath=".\res\PicManager.ico"
 				>
