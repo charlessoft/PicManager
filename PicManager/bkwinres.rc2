@@ -50,3 +50,14 @@ DEFINE_BMP(IDB_DLG_BODY,					502,		"res\\dlg_body.bmp")
 //APP
 DEFINE_ICO(IDI_BIG,							1,						"res\\mycode.ico")
 DEFINE_ICO(IDI_SMALL,						2,						"res\\mycode.ico")
+
+DEFINE_PNG(IDC_TAB_LOGMODULE,				3,						"res\\logo_module.png")
+DEFINE_BMP(IDC_TAB_MAIN,					5,						"res\\tab_main.bmp")
+
+
+
+DEFINE_BMP(IDB_BITMAP_LISTCTRL_CHECK,		111,		"res\\listctrl_check.bmp")
+DEFINE_BMP(IDB_BITMAP_LISTCTRL_HEADER,		108,		"res\\listctrl_header.bmp")
+DEFINE_BMP(IDB_BITMAP_MINUS_PLUS,			109,		"res\\minus_plus.bmp")
+DEFINE_BMP(IDB_BITMAP_LISTCTRL_RADIO,		110,		"res\\listctrl_radio.bmp")
+DEFINE_BMP(IDB_BITMAP_LISTCTRL_COMBO,		112,		"res\\listctrl_combo.bmp")

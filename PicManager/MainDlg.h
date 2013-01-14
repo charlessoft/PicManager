@@ -27,6 +27,7 @@
 //	LRESULT OnCancel(WORD /*wNotifyCode*/, WORD wID, HWND /*hWndCtl*/, BOOL& /*bHandled*/);
 //};
 #include "wtlhelper/whwindow.h"
+#include "ListViewCtrlEx.h"
 class CMainDlg : public CBkDialogImpl<CMainDlg> ,
 	public CWHRoundRectFrameHelper<CMainDlg>
 {
@@ -35,7 +36,7 @@ public:
 	{}
 
 	BK_NOTIFY_MAP(IDC_RICHVIEW_WIN)
-		//BK_NOTIFY_ID_COMMAND(IDC_BTN_SYS_CLOSE, OnBkBtnClose)
+		BK_NOTIFY_ID_COMMAND(IDC_BTN_SYS_CLOSE, OnBkBtnClose)
 		//BK_NOTIFY_ID_COMMAND(IDC_BTN_MAX, OnMaxWindow)
 		//BK_NOTIFY_ID_COMMAND(IDC_BTN_START_CHANGE,OnChange)
 		//BK_NOTIFY_ID_COMMAND(IDC_BTN_ADD,OnAdd)
@@ -59,5 +60,8 @@ public:
 public:
 		void	OnSysCommand(UINT nID, CPoint point);
 		LRESULT OnInitDialog(HWND, LPARAM);
+		void OnBkBtnClose();
 
+public:
+	CListViewCtrlEx m_ListViewCtrl;
 };

@@ -8,11 +8,12 @@
   <!--<imgframe name="panelgray" src="106" top="1" left="1" crbg="FBFCFD"/>-->
   <!--<<imgframe name="tabpage" src="107" top="1" left="1" crbg="FBFCFD" part="center"/>-->
    <!--<<imghorzex name="tab" src="10006" mode="mask" subwidth="7" left="3"/>-->
-  <!--<png name="tabmain" src="97" mode="mask" subwidth="35" />-->
-  <!--<<imglst name="tabmain" src="5" mode="mask" subwidth="71"/>-->
-  <!--<<png name="logomodule" src="3" subwidth="48" />-->
+  <imglst name="tabmain" src="5" mode="mask" subwidth="71" />
+  <png name="logomodule" src="3" subwidth="48" />
 
-   <button name=normalbtn border="7D9EBC" bg="FF6A6A" bgup="FEFEFE" bgdown="C6E2FD" bguphover="FEFEFE" bgdownhover="DBEDFE" bguppush="C6E2FD" bgdownpush="FEFEFE"/>
+  
+
+  <button name="normalbtn" border="7D9EBC" bg="FF6A6A" bgup="FEFEFE" bgdown="C6E2FD" bguphover="FEFEFE" bgdownhover="DBEDFE" bguppush="C6E2FD" bgdownpush="FEFEFE"/>
   <!--<skins-png>-->
   
   <png name="little_logo"  src="201"/>

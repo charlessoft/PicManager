@@ -15,82 +15,30 @@
   </footer>
   
   <body class="dlg_body" width="full" height="full">
-    <dlg pos="0,0,-0,-0" crbg="FFFFFF">
-		 <tabctrl id="10641" cursel="0" tabwidth="65" tabskin="tab" tabspacing="4" tabpos="10" pos="0,10,-1,-0" frameskin="panelgray" framepos="-1" crtext="000000">
-      <tab id="10770" title="pdf转换" width="full" height="full" class1="tabpage" >
-        <dlg  pos="5,5,-5,-40" class="panel" width="full" height="full">
-          <realwnd id="2001" pos="1,1,-1,-1" ctrlid="2001" crbg1="FBFCFD" />
-		      <!--<realwnd id="2012" pos="0,0,60,60" ctrlid="2011" crbg1="FBFCFD" show="0"/>-->
-        </dlg> 
+    <dlg pos="0,0,-0,-0" crbg="cbcdc9">
+      <!--	 <tabctrl id="10641" cursel="0" tabwidth="65" tabheight="70" tabskin="tabmain" iconskin="logomodule" tabspacing="4" tabpos="10" pos="0,10,-1,-0" frameskin="panelgray" framepos="-1" crtext="000000">
+       <tab title="首页" width="full" height="full" class="tabpageblue"></tab>
+       <tab title="测试" width="full" height="full" class="tabpageblue"></tab>
+    </tabctrl>-->
 
-		<dlg pos="5,-37,-5,-5" width="full" height="30" crbg="000000">
-      <!--<img pos="0,0,20,-0" skin="dlg_pdf_bg2" />-->
-      <button id="1023" pos="2,2,60,30" class=normalbtn>添加</button>
-			<button id="1024" pos="64,2,124,30" class=normalbtn>编辑</button>
-			<button id="1025" pos="128,2,188,30" class=normalbtn>删除</button>
-			<button id="1026" pos="-105,2,-20,-2" class=common_btn>开始转换</button>
-		</dlg>
-      </tab>
-      <tab id="11000" title="已启动" width="full" height="full" class1="tabpage" >
-        <dlg id="11001" pos="5,5,-5,-40" class="panel"  width="full" height="full">
-          <realwnd id="2010" pos="1,1,-1,-1" ctrlid="2001" crbg1="FBFCFD" />
-        </dlg>
-		<dlg pos="5,-37,-5,-5" width="full" height="30">
-			<button id="1027" pos="-213,2,-110,-2" class=normalbtn>查看模块</button>
-			<button id="1028" pos="-105,2,-2,-2" class=common_btn>结束游戏</button>
-		</dlg>
-      </tab>
-      <tab id="11000" title="答题器" width="full" height="full" class1="tabpage" >
-			<dlg id="11001" pos="5,5,-5,-40" class="panel"  width="full" height="full">
-        <!--<realwnd id="2010" pos="1,1,-1,-1" ctrlid="2001" crbg1="FBFCFD" />-->
-        <realwnd id="2007" ctrlid="2007" pos="70,51,318,92" />
+      <tabctrl id="136" tabwidth="71" tabheight="71" tabskin="tabmain" iconskin="logomodule" splitterskin1="tabmainsplitter" tabspacing="5" tabpos="1" framepos="7" pos="0,4,-0,-1" icon-x="10" icon-y="1" text-x="0" text-y="25">
+        <tab title="向后" width="full" height="full" crtext="000000" class="tabpageblue">
+          <dlg pos="1,1,-1,-1" class="panel">
+            <!--<text pos="10,100">首页</text>-->
+            <realwnd id="2001" pos="1,1,-1,-1" ctrlid="2001" crbg1="FBFCFD" />
+          </dlg>
+        </tab>
+        <tab title="向前" width="full" height="full" crtext="000000" class="tabpageblue">
+          <text pos="10,200"> 来一起查杀木马吧~~</text>
+        </tab>
+        <tab title="上一级" width="full" height="full" class1="tabpage" crtext="000000" class="tabpageblue">
 
-      </dlg>
-			<dlg pos="5,-37,-5,-5" width="full" height="30">
-        <text id="1030" pos="2,2">就绪</text>
-				<button id="1031" pos="-105,2,-2,-2" class=common_btn>启动答题器</button>
-			</dlg>
-	   </tab>
-       <!--<tab id="12000" title="配置" width="full" height="full" class1="tabpage" >
-        <dlg id="11001" pos="5,5,-5,-5" class="panel">
-			<dlg id="22001" pos="5,5,-5,-5" class="tab_header_bg">
-				<dlg id="11003" pos="2,2,-2,85" width="full" height="30">
-					<text class=settingsubtitle pos="0,0">游戏设置</text>
-					<hr pos="70,6,-0,6" class=settingline/>
-				</dlg>
-				<dlg id="11002" pos="2,20,-2,50" width="full" height="30">
-					  <text id="533" pos="2,8"> 游戏目录:</text>
-					  <dlg pos="60,2,-70,-2" class=panel><realwnd id=2002 ctrlid=2002 pos="2,2,-2,-2"/></dlg>
-					  <button id="1077" pos="-60,2,-2,-2" class=common_btn>选择目录</button>
-				</dlg>
-				<dlg id="11003" pos="2,55,-2,85" width="full" height="30">
-					<check id="1029" pos="60,2">启用多开</check>
-				</dlg>
-			</dlg>
-
-			<dlg id="22002" pos="5,85,-5,-5" class="tab_header_bg">
-				<dlg id="11003" pos="2,2,-2,85" width="full" height="30">
-					<text class=settingsubtitle pos="0,0">注入DLL</text>
-					<hr pos="70,6,-0,6" class=settingline/>
-				</dlg>
-				<dlg id="11002" pos="2,20,-2,80" width="full" height="80">
-					  <dlg pos="2,2,-70,60" class=panel><realwnd id=2003 ctrlid=2003 pos="2,2,-2,-2"/></dlg>
-					  <button id="1027" pos="-60,2,-2,-32" class=common_btn>添加</button>
-					  <button id="1028" pos="-60,30,-2,-2" class=common_btn>删除</button>
-				</dlg>
-				
-			</dlg>
-		</dlg>
-      </tab>
-	  <tab id="11000" title="日志" width="full" height="full" class1="tabpage" >
-		<dlg id="11001" pos="5,5,-5,-40" class="panel"  width="full" height="full">
-          <realwnd id="2011" pos="1,1,-1,-1" ctrlid="2001" crbg1="FBFCFD" />
-        </dlg>
-		<dlg pos="5,-37,-5,-5" width="full" height="30">
-			<button id="1029" pos="-105,2,-2,-2" class=common_btn>清空日志</button>
-		</dlg>
-	   </tab>-->
-    </tabctrl>
+        </tab>
+        <tab title="图片显示方式" width="full" height="full" class1="tabpage" crtext="000000" class="tabpageblue">
+        </tab>
+        <tab title="Logo" width="full" height="full" crtext="000000" class="tabpageblue">
+        </tab>
+      </tabctrl>
     </dlg>
   </body>
 

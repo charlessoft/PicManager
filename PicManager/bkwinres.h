@@ -20,3 +20,4 @@
 
 #define IDC_TESTTEXT					1030
 #define IDC_DATIKA					1031
+

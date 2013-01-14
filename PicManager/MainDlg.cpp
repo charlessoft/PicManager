@@ -41,7 +41,12 @@
 //	return 0;
 //}
 
-void	CMainDlg::OnSysCommand(UINT nID, CPoint point)
+void	CMainDlg::OnBkBtnClose()
+{
+	EndDialog(IDOK);
+}
+
+void CMainDlg::OnSysCommand(UINT nID, CPoint point)
 {
 	SetMsgHandled(FALSE);
 
@@ -77,5 +82,37 @@ LRESULT CMainDlg::OnInitDialog(HWND, LPARAM)
 {
 	SetIcon(::LoadIcon((HMODULE)&__ImageBase,MAKEINTRESOURCE(IDI_BIG)));
 	SetIcon(::LoadIcon((HMODULE)&__ImageBase,MAKEINTRESOURCE(IDI_SMALL)),FALSE);
-return 1;
+	
+		m_ListViewCtrl.Create( 
+		GetViewHWND(), NULL,NULL, 
+		WS_CHILD | WS_VISIBLE | LVS_REPORT | LVS_SHOWSELALWAYS | LVS_OWNERDRAWFIXED | LVS_SINGLESEL , 
+		0, IDC_LISTVIEW_CTRL, NULL);
+
+	{
+		INT nRow = 0;
+		m_ListViewCtrl.InsertColumn(nRow++, BkString::Get(106), LVCFMT_CENTER, 56);
+		m_ListViewCtrl.InsertColumn(nRow++, BkString::Get(107), LVCFMT_CENTER, 120);
+		m_ListViewCtrl.InsertColumn(nRow++, BkString::Get(108), LVCFMT_CENTER, 150);
+		m_ListViewCtrl.InsertColumn(nRow++, BkString::Get(109), LVCFMT_CENTER, 100);
+		m_ListViewCtrl.InsertColumn(nRow++, BkString::Get(110), LVCFMT_CENTER, 60);
+
+
+		//int nItem = m_wndAccountListView.Append(_T("#1"), NULL, 0, LISTITEM_CHECKBOX);
+		//m_wndAccountListView.AppendSubItem(nItem, _T("iseeeyou1234@changyou.com"));
+		//m_wndAccountListView.AppendSubItem(nItem, _T("西南电信一区"));
+		//m_wndAccountListView.AppendSubItem(nItem, _T("蜀南竹海"));
+		//m_wndAccountListView.AppendSubItem(nItem, _T("角色1"),2012, SUBITEM_COMBO);
+		////m_wndListView.AppendSubItem(nItem, _T(""));
+
+		//nItem = m_wndAccountListView.Append(_T("#2"), NULL, 0, LISTITEM_CHECKBOX);
+		//m_wndAccountListView.AppendSubItem(nItem, _T("iseeeyou1234@changyou.com"));
+		//m_wndAccountListView.AppendSubItem(nItem, _T("西南电信一区"));
+		//m_wndAccountListView.AppendSubItem(nItem, _T("蜀南竹海"));
+		//m_wndAccountListView.AppendSubItem(nItem, _T("角色2"),2012, SUBITEM_COMBO);
+		//m_wndListView.AppendSubItem(nItem, _T(""));
+
+		//m_wndAccountListView.SetCheckState(nItem, TRUE);
+	}
+//	m_ListViewCtrl.SetObserverWindow(m_hWnd);
+	return 1;
 }
